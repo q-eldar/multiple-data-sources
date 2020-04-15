@@ -1,18 +1,20 @@
 package edlar.springframework.eepleaf.model.inventory;
 
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @Data
-//@Table(name = "seeds")
+@Table(name = "seeds")
+//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Seed {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private String memberId;
+    private String product_code;
+    private String description;
+    private Integer quantity;
+    private Float price;
 }
 

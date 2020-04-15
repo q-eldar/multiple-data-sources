@@ -2,17 +2,15 @@ package edlar.springframework.eepleaf.model.inventory;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
+@Table(name = "trees")
 public class Tree {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private String memberId;
+    private String product_code;
+    private String description;
+    private Integer quality;
+    private Float price;
 }

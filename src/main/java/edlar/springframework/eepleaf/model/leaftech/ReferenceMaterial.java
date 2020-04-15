@@ -2,19 +2,16 @@ package edlar.springframework.eepleaf.model.leaftech;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
+@Table(name = "referencematerials")
 public class ReferenceMaterial {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private int expirationMonth;
-    private int expirationYear;
+    private String productid;
+    private String productdescription;
+    private int productquantity;
+    private float productprice;
 }
