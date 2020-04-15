@@ -1,9 +1,9 @@
-package guru.springframework.multipledatasources.configuration;
+package edlar.springframework.eepleaf.config;
 
 import com.zaxxer.hikari.HikariDataSource;
-import guru.springframework.multipledatasources.model.inventory.Seed;
-import guru.springframework.multipledatasources.model.inventory.Shrub;
-import guru.springframework.multipledatasources.model.inventory.Tree;
+import edlar.springframework.eepleaf.model.inventory.Tree;
+import edlar.springframework.eepleaf.model.inventory.Seed;
+import edlar.springframework.eepleaf.model.inventory.Shrub;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "guru.springframework.multipledatasources.repository.inventory",
+@EnableJpaRepositories(basePackages = "guru.springframework.multipledatasources.dao.inventory",
         entityManagerFactoryRef = "inventoryEntityManagerFactory",
         transactionManagerRef= "inventoryTransactionManager"
 )

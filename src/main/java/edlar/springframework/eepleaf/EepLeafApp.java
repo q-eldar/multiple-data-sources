@@ -1,13 +1,13 @@
-package guru.springframework.multipledatasources;
+package edlar.springframework.eepleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MultipledatasourcesApplication {
+public class EepLeafApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(MultipledatasourcesApplication.class, args);
+        SpringApplication.run(EepLeafApp.class, args);
     }
 
 }

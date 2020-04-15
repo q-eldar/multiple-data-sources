@@ -1,4 +1,4 @@
-package guru.springframework.multipledatasources.model.card;
+package edlar.springframework.eepleaf.model.leaftech;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Card {
+public class Genomic {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -1,4 +1,5 @@
-package guru.springframework.multipledatasources.model.inventory;
+package edlar.springframework.eepleaf.model.inventory;
+
 
 import lombok.Data;
 
@@ -9,10 +10,13 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Tree {
+//@Table(name = "seeds")
+public class Shrub {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String memberId;
 }
+

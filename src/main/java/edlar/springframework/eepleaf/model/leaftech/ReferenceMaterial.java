@@ -1,4 +1,4 @@
-package guru.springframework.multipledatasources.model.orderinfo;
+package edlar.springframework.eepleaf.model.leaftech;
 
 import lombok.Data;
 
@@ -9,10 +9,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Order {
+public class ReferenceMaterial {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String card_umber;
+    private String name;
+    private int expirationMonth;
+    private int expirationYear;
 }

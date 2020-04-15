@@ -1,4 +1,4 @@
-package guru.springframework.multipledatasources.model.inventory;
+package edlar.springframework.eepleaf.model.inventory;
 
 import lombok.Data;
 

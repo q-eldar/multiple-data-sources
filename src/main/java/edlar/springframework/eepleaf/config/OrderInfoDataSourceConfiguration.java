@@ -1,6 +1,6 @@
-package guru.springframework.multipledatasources.configuration;
+package edlar.springframework.eepleaf.config;
 
-import guru.springframework.multipledatasources.model.orderinfo.Order;
+import edlar.springframework.eepleaf.model.orderinfo.Order;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
@@ -16,7 +16,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "guru.springframework.multipledatasources.repository.orderinfo",
+@EnableJpaRepositories(basePackages = "guru.springframework.multipledatasources.dao.orderinfo",
         entityManagerFactoryRef = "orderInfoEntityManagerFactory",
         transactionManagerRef= "orderInfoTransactionManager")
 public class OrderInfoDataSourceConfiguration {
