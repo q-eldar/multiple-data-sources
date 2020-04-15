@@ -1,4 +1,4 @@
-package guru.springframework.multipledatasources.model.member;
+package guru.springframework.multipledatasources.model.orderinfo;
 
 import lombok.Data;
 
@@ -9,11 +9,10 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Member {
+public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    private String memberId;
+    private String card_umber;
 }

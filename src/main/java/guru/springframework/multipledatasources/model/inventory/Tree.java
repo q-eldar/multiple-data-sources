@@ -1,4 +1,4 @@
-package guru.springframework.multipledatasources.model.cardholder;
+package guru.springframework.multipledatasources.model.inventory;
 
 import lombok.Data;
 
@@ -9,11 +9,10 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class CardHolder {
-
+public class Tree {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String name;
     private String memberId;
-    private String cardNumber;
 }
